@@ -1,0 +1,111 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Source+Serif+Pro&display=swap');
+body {
+  background-color: #f6f5f3;
+}
+
+.nav {
+  height: 64px;
+  border-bottom: solid 1px #ddd;
+  background-color: #fff;
+  &__saatvaLogo {
+    width: 107px;
+    fill: #c19678;
+    stroke: none;
+  }
+
+  &__shoppingCart {
+    font-size: 32px;
+    color: #6b6257;
+  }
+
+  &__cartBubble {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #c19678;
+    position: absolute;
+    top: 14px;
+    margin-left: 22px;
+    color: #fff;
+    font-size: 10px;
+  }
+}
+
+.main {
+  margin-top: 24px;
+  display: flex;
+
+  &__mattressImg {
+    width: 60vw;
+    height: 480px;
+    box-shadow: 0px 17px 50px -17px white inset;
+    img {
+      position: relative;
+      z-index: -1;
+    }
+  }
+
+  &__mattressInfo {
+    width: 100%;
+    margin-left: 24px;
+    font-family: 'Questrial', sans-serif;
+
+    h2 {
+      text-transform: capitalize;
+      font-family: 'Source Serif Pro', serif;
+    }
+
+    .toggle {
+      &__label {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 3em;
+        margin-bottom: 0.5em;
+      }
+
+      &__button {
+        color: #6b6257;
+        font-size: 14px;
+        border: solid 1px #d2d2d2;
+        border-right: none;
+        padding: 10px 12px;
+        text-align: center;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #d2d2d2;
+        }
+
+        &--active {
+          @extend .toggle__button;
+          color: #fff;
+          background-color: #a6a19a;
+        }
+
+        &:last-of-type {
+          border-right: solid 1px #d2d2d2;
+        }
+      }
+    }
+
+    &__price {
+      margin-top: 3em;
+      font-size: 12px;
+    }
+
+    .buyButton {
+      margin-top: 5em;
+      color: #fff;
+      font-size: 14px;
+      background-color: #d5aa63;
+      border: none;
+      text-align: center;
+      padding: 10px 12px;
+      &:hover{
+        background-color: #d6c6ad;
+      }
+    }
+  }
+}
