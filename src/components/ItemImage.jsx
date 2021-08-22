@@ -10,13 +10,9 @@ const ItemImage = ({ image }) => (
       }}
       classNames="fade"
     >
-      <div className="main__mattressImgContainer">
+      <div className="itemImgContainer">
         <div
-          className="main__mattressImgContainer__mattressImg"
-          style={{ backgroundImage: `url(${image}` }}
-        ></div>
-        <div
-          className="main__mattressImgContainer__mattressImgReflection"
+          className="itemImgContainer__itemImg w-100 h-100"
           style={{ backgroundImage: `url(${image}` }}
         ></div>
       </div>

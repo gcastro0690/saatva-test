@@ -1,0 +1,40 @@
+.itemInfo {
+  width: 100%;
+  padding-left: 24px;
+  font-family: 'Questrial', sans-serif;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  }
+
+  h2 {
+    text-transform: capitalize;
+    font-family: 'Source Serif Pro', serif;
+  }
+
+  .toggle {
+    &__label {
+      margin-top: 3em;
+      @media (max-width: 991px) {
+        margin-top: 1.5vh;
+      }
+    }
+  }
+
+  &__price {
+    margin-top: 3em;
+    font-size: 12px;
+    @media (max-width: 991px) {
+      margin-top: 1em;
+    }
+  }
+
+  .buyButton {
+    margin-top: 5em;
+    @media (max-width: 991px) {
+      margin-top: 1.5vh;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import React from 'react';
 const Toggle = ({ selectItem, items, selectedItem }) => (
   <div className="toggle">
     <div className="toggle__label">Select matress type</div>
-    <div className="d-flex">
+    <div className="d-flex flex-column flex-sm-row">
       {items.map((i) => (
         <div
           key={`toggle-${i.id}`}

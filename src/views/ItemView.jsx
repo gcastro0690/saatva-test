@@ -27,8 +27,8 @@ const ItemView = () => {
   const [cartCount, incrementCartCount] = useState(0);
   return (
     <>
-      <Nav cartCount={cartCount}/>
-      <div className="main container">
+      <Nav cartCount={cartCount} />
+      <div className="main container-lg d-flex flex-column flex-lg-row">
         <ItemImage {...selectedItem} />
         <ItemInfo
           cartCount={cartCount}

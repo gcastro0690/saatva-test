@@ -9,10 +9,10 @@ const ItemInfo = ({
   incrementCartCount,
   cartCount,
 }) => (
-  <div className="main__mattressInfo">
+  <div className="itemInfo">
     <h2>Choose Your Mattress</h2>
     <Toggle items={items} selectItem={selectItem} selectedItem={selectedItem} />
-    <div className="main__mattressInfo__price d-flex justify-content-between w-100">
+    <div className="itemInfo__price d-flex justify-content-between w-100">
       <span className="fw-bold">{selectedItem.name}</span>
       <span>{selectedItem.price}</span>
     </div>

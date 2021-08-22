@@ -1,0 +1,29 @@
+.nav {
+  height: 64px;
+  border-bottom: solid 1px #ddd;
+  background-color: #fff;
+  box-shadow: -1px 4px 5px 0px lightgray;
+
+  &__saatvaLogo {
+    width: 107px;
+    fill: #c19678;
+    stroke: none;
+  }
+
+  &__shoppingCart {
+    font-size: 32px;
+    color: #6b6257;
+  }
+
+  &__cartBubble {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #c19678;
+    position: absolute;
+    top: 14px;
+    margin-left: 22px;
+    color: #fff;
+    font-size: 10px;
+  }
+}
