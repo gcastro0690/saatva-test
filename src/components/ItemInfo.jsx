@@ -18,7 +18,7 @@ const ItemInfo = ({
       <span>{selectedItem.price}</span>
     </div>
     <div className="itemInfo__reviewScore d-flex justify-content-between align-items-center w-100">
-      <span className="fw-bold">Review Rating</span>
+      <span className="fw-bold text-start">Review Rating</span>
       <div className="d-flex no-wrap align-items-center">
         <span className="me-1">{`(${selectedItem.reviewScore})`}</span>
         <Rating value={selectedItem.reviewScore} readOnly={true} precision={0.5}/>
