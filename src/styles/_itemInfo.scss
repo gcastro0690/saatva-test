@@ -27,14 +27,22 @@
     margin-top: 3em;
     font-size: 12px;
     @media (max-width: 991px) {
-      margin-top: 1em;
+      margin-top: 1vh;
+    }
+  }
+
+  &__reviewScore {
+    margin-top: 1em;
+    font-size: 12px;
+    @media (max-width: 991px) {
+      margin-top: 1vh;
     }
   }
 
   .buyButton {
     margin-top: 5em;
     @media (max-width: 991px) {
-      margin-top: 1.5vh;
+      margin-top: 1vh;
     }
   }
 }
