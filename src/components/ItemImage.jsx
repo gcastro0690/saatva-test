@@ -1,11 +1,27 @@
 import React from 'react';
+import { SwitchTransition, CSSTransition } from 'react-transition-group';
 
-const ItemImage = ({ image, name }) => (
-  <div className="main__mattressImg">
-    <picture>
-      <img className="w-100" src={image} alt={name}></img>
-    </picture>
-  </div>
+const ItemImage = ({ image }) => (
+  <SwitchTransition>
+    <CSSTransition
+      key={image}
+      addEndListener={(node, done) => {
+        node.addEventListener('transitionend', done, false);
+      }}
+      classNames="fade"
+    >
+      <div className="main__mattressImgContainer">
+        <div
+          className="main__mattressImgContainer__mattressImg"
+          style={{ backgroundImage: `url(${image}` }}
+        ></div>
+        <div
+          className="main__mattressImgContainer__mattressImgReflection"
+          style={{ backgroundImage: `url(${image}` }}
+        ></div>
+      </div>
+    </CSSTransition>
+  </SwitchTransition>
 );
 
 export default ItemImage;
